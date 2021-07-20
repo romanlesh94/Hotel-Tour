@@ -5,21 +5,25 @@
         align-items: center
         justify-content: space-between
         padding-top: 40px
+    &__search
+        margin-right: auto
+        margin-left: 108px
 .search
     display: flex 
     position: relative
     overflow: hidden
     height: 40px
     border-radius: 6px
+    margin-bottom: 0px
     &__input
         width: 350px
         height: 100%
         background-color: #f5fafe
-        
+        padding-right: 75px
         border: none
         font-size: 12px
         line-height: 15px
-        color: #333333
+        color: $text-color
         padding-left: 23px
     &__button
         position: absolute
@@ -29,5 +33,19 @@
         right: 0
         border: none
         background-color: $primary
-        
+.user
+    display: flex
+    align-items: center
+    text-decoration: none
+    &__avatar
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        object-fit: cover
+    &__name
+        font-size: 14px
+        line-height: 18px
+        color: $text-color
+        margin-left: 18px
+
 
