@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,400&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet"
     >
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
@@ -17,18 +18,36 @@
         <div class="container">
             <div class="navbar-top">
                 
-                <a href="#" class="logo">
+                <a href="#" 
+                class="logo" 
+                data-aos="fade-right" 
+                data-aos-offset="300" 
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="100"
+                >
                     <img src="img\logo.svg" alt="Best Tour Plans" class="logo__image">
                 </a>
                 
-                <form action="" class="search navbar__search navbar__search--mobile-hidden">
+                <form action="" 
+                class="search navbar__search navbar__search--mobile-hidden"
+                data-aos="fade-down" 
+                data-aos-offset="300" 
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="100"
+                >
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img\search.svg" alt="Icon: Search">
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user navbar__user--mobile-hidden">
+                <a href="#" 
+                class="user navbar__user navbar__user--mobile-hidden" 
+                data-aos="fade-left" 
+                data-aos-offset="300" 
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="300"
+                >
                     <img src="img\user-avatar.jpg" alt="User Avatar" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -41,7 +60,7 @@
             </div>            
         </div>
 
-        <div class="navbar-bottom">
+        <div class="navbar-bottom" data-aos="flip-up" data-aos-delay="100">
            <div class="container">
                <ul class="navbar-menu">
                 <li class="navbar-menu__item navbar-menu__item--mobile-visible">
@@ -71,7 +90,7 @@
 
     </header>
    
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" data-aos="flip-up" data-aos-delay="300">
         <div class="container">
             <ul class="breadcrumb-list">
                 <li class="breadcrumb-list__item">
@@ -90,7 +109,7 @@
     <section class="hotel"> 
         <div class="container">           
             
-            <div class="hotel-info">
+            <div class="hotel-info" data-aos="flip-up" data-aos-delay="700">
                 <div class="hotel-info__text">
                     <div class="hotel-wrapper">
                         <div class="stars">
@@ -116,7 +135,7 @@
             <!-- hotel-info -->
             
             <div class="hotel-grid">
-                <div class="swiper-container hotel-slider hotel__slider">
+                <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-up" data-aos-delay="300">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -136,7 +155,7 @@
                 </div>
                 
                 
-                <div class="hotel-right">
+                <div class="hotel-right"data-aos="fade-up" data-aos-delay="700">
                     <div class="booking">
                         <div class="booking__info">
                             <div class="booking__price">
@@ -184,7 +203,7 @@
     </section>
 
     <section class="newsletter">
-        <div class="newsletter-wrapper">
+        <div class="newsletter-wrapper" data-aos="fade-up" data-aos-delay="300">
             <h2 class="newsletter-title newsletter__title">
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
@@ -198,7 +217,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <h2 class="reviews__title">What people think about us</h2>
             <div class="swiper-container reviews-slider">
@@ -252,25 +271,25 @@
         <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
                     <button class="card__button">Book now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
                     <button class="card__button">Book now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
                     <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                     <button class="card__button">Book now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
                     <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <button class="card__button">Book now</button>
@@ -437,6 +456,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body>
